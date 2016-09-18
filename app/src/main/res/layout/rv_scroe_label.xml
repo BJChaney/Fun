@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/view_height"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/padding"
+    android:paddingRight="@dimen/padding">
+
+    <TextView
+        android:id="@+id/tv_num"
+        style="@style/game_score_label"
+        android:layout_weight="1"
+        android:text="A组"
+        android:textColor="@color/red" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/game_score_label"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:text="俱乐部" />
+
+    <TextView
+        android:id="@+id/tv_score1"
+        style="@style/game_score_label"
+        android:layout_weight="1"
+        android:text="场" />
+
+    <TextView
+        android:id="@+id/tv_score2"
+        style="@style/game_score_label"
+        android:layout_weight="1"
+        android:text="胜" />
+
+    <TextView
+        android:id="@+id/tv_score3"
+        style="@style/game_score_label"
+        android:layout_weight="1"
+        android:text="平" />
+
+    <TextView
+        android:id="@+id/tv_score4"
+        style="@style/game_score_label"
+        android:layout_weight="1"
+        android:text="负" />
+
+    <TextView
+        android:id="@+id/tv_score5"
+        style="@style/game_score_label"
+        android:layout_weight="2"
+        android:text="进/失" />
+
+    <TextView
+        android:id="@+id/tv_score6"
+        style="@style/game_score_label"
+        android:layout_weight="1"
+        android:text="积分" />
+</LinearLayout><!-- A组，B组 -->

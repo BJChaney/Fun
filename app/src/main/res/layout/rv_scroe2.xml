@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/view_height"
+    android:background="@color/lighttransblack"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/padding"
+    android:paddingRight="@dimen/padding">
+
+    <TextView
+        android:id="@+id/tv_num"
+        style="@style/game_score"
+        android:layout_weight="1"
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/game_score"
+        android:layout_weight="5"
+        android:text="北京大黄蜂" />
+
+    <TextView
+        android:id="@+id/tv_score1"
+        style="@style/game_score"
+        android:layout_weight="1"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/tv_score2"
+        style="@style/game_score"
+        android:layout_weight="1"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/tv_score3"
+        style="@style/game_score"
+        android:layout_weight="1"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/tv_score4"
+        style="@style/game_score"
+        android:layout_weight="1"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/tv_score5"
+        style="@style/game_score"
+        android:layout_weight="2"
+        android:text="0/0" />
+
+    <TextView
+        android:id="@+id/tv_score6"
+        style="@style/game_score"
+        android:layout_weight="1"
+        android:text="1" />
+</LinearLayout><!-- A组，B组 -->

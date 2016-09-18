@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/view_height"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/padding"
+    android:paddingRight="@dimen/padding">
+
+    <TextView
+        android:id="@+id/tv_num"
+        style="@style/game_score_label"
+        android:layout_width="48dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tv_club"
+        style="@style/game_score_label"
+        android:layout_weight="2"
+        android:text="俱乐部" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/game_score_label"
+        android:layout_weight="1"
+        android:text="球员" />
+
+    <TextView
+        android:id="@+id/tv_yelllow"
+        style="@style/game_score_label"
+        android:layout_weight="1"
+        android:text="黄牌" />
+
+    <TextView
+        android:id="@+id/tv_red"
+        style="@style/game_score_label"
+        android:layout_weight="1"
+        android:text="红牌" />
+
+</LinearLayout><!-- 射手 -->

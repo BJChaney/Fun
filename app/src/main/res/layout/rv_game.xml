@@ -3,14 +3,78 @@
     android:layout_width="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    android:layout_height="100dp">
+    android:layout_height="120dp">
 <View
     style="@style/divider.v"/>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
-
-    </LinearLayout>
-
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding">
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/sevenDarkGray"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/tv_score"
+        android:text="2016 09-10"/>
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/elevenSize"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/padding"
+        android:layout_marginBottom="@dimen/padding"
+        android:layout_marginLeft="@dimen/margin_double"
+        android:layout_marginRight="@dimen/margin_double"
+        android:layout_margin="@dimen/padding"
+        android:text="0:0"
+        android:layout_centerInParent="true"
+        />
+    <ImageView
+        android:id="@+id/imv_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_video"
+        android:layout_below="@id/tv_score"
+        android:scaleType="centerInside"
+        android:layout_centerHorizontal="true"
+        />
+    <include
+        android:id="@+id/sdv_left"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_toLeftOf="@id/tv_score"
+        android:layout_alignParentTop="true"
+        layout="@layout/include_simpledraweeview_fitcenter"
+        ></include>
+    <include
+        android:id="@+id/sdv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/tv_score"
+        layout="@layout/include_simpledraweeview_fitcenter"
+        ></include>
+    <TextView
+        android:id="@+id/tv_left"
+        style="@style/sevenBlack"
+        android:layout_below="@id/sdv_left"
+        android:layout_toLeftOf="@id/tv_score"
+        android:layout_width="120dp"
+        android:gravity="center"
+        android:text="国家电网1"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_right"
+        style="@style/sevenBlack"
+        android:layout_below="@id/sdv_right"
+        android:layout_toRightOf="@id/tv_score"
+        android:layout_width="120dp"
+        android:gravity="center"
+        android:text="国家电网2"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
 </LinearLayout>
