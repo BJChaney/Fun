@@ -8,14 +8,6 @@ package com.core.api;
 
 public abstract class ApiSettings {
 
-    public final static String AGREE_URL ="http://7xl9qr.com1.z0.glb.clouddn.com/zhidian_agreement.html";
-
-    public final static String HUANXIN_APPOINTID = "appointId";
-
-    public final static String HUANXIN_AVATAR = "sendAvatar";
-
-    public final static String HUANXIN_NAME = "sendName";
-
     public final static String VERSION_CODE = ""+BuildConfig.VERSION_CODE;
 
     public final static String OSTYPE = "ANDROID";
@@ -25,43 +17,11 @@ public abstract class ApiSettings {
      */
     public static String URL_BASE = BuildConfig.URL_BASE;
 
-//    public static String URL_BASE = "http://zhid58.com:8080/api";
 
     /**
-     * 分享点师和话题
+     * 分享
      */
     public final static String URL_SHARE = BuildConfig.URL_SHARE;
-
-
-
-//    public final static String URL_SHARE = "http://zhid58.com";
-
-    /**
-     * 分享红包链接
-     */
-    public final static String URL_SHARE_COUPON = BuildConfig.URL_SHARE_COUPON;
-
-//    public final static String URL_SHARE_COUPON = "http://zhid58.com/coupon/hongbao/?pid=";
-
-    /**
-     * 分享爆料链接
-     */
-    public final static String URL_SHARE_DISCLOSE = BuildConfig.URL_SHARE_DISCLOSE;
-
-    /**
-     * 分享动态链接
-     */
-    public final static String URL_SHARE_ARTICLE = BuildConfig.URL_SHARE_ARTICLE;
-
-    /**
-     * 分享活动
-     */
-    public final static String URL_SHARE_ACTIVITY = BuildConfig.URL_SHARE_ACTIVITY;
-
-    /**
-     * 分享学校
-     */
-    public final static String URL_SHARE_COLLEGE = BuildConfig.URL_SHARE_SCHOOL;
 
 
     /**
@@ -72,8 +32,6 @@ public abstract class ApiSettings {
 
 
     public static boolean debug = BuildConfig.DEBUG;
-
-    public final static String ZHIDIAN_URL = "http://www.zhid58.com";
 
 
     /**
@@ -87,12 +45,7 @@ public abstract class ApiSettings {
     public final static String URL_VIDEO_BASE = "http://video.zhid58.com/";
 
     /**
-     * 优惠券使用说明
-     */
-    public final static String URL_COUPOU_INTRODUCTION = "http://zhid58.com/html/coupon_introduction.html";
-
-    /**
-     * 益答服务协议
+     * 服务协议
      */
     public final static String URL_ANSWER_PROTOCOL = "http://www.zhid58.com/html/yd_protocol.html";
 

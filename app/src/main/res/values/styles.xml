@@ -210,6 +210,23 @@
         <item name="android:windowExitAnimation">@anim/outtop_anim</item>
     </style>
 
+    <style name="cutline">
+        <item name="android:background">@color/lightgray</item>
+    </style>
+    <style name="cutline.v" parent="cutline">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="cutline.h" parent="cutline">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+    </style>
+
+    <!-- 组件公共 -->
+    <style name="bg_yellow_text_black" parent="sevenTransBlack">
+        <item name="android:background">@drawable/bg_basecolor_corner_small</item>
+    </style>
+
     <!--登录注册-->
     <style name="login_edittext">
         <item name="android:layout_width">match_parent</item>
@@ -233,5 +250,19 @@
         <item name="android:layout_height">match_parent</item>
         <item name="android:gravity">center</item>
     </style>
+    <style name="game_qiandao_tv" parent="sixTransBlack">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_height">@dimen/view_height</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:drawablePadding">@dimen/padding</item>
+    </style>
+    <style name="game_qiandao_et" parent="game_qiandao_tv">
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:button">@null</item>
+    </style>
+
+
+
 
 </resources>

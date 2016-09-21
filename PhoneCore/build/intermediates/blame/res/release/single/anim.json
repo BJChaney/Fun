@@ -96,12 +96,12 @@
         "source": "/Users/mengxiangcheng/Documents/project/android/project/fun/fun/PhoneCore/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/anim/abc_fade_in.xml"
     },
     {
-        "merged": "/Users/mengxiangcheng/Documents/project/android/project/fun/fun/PhoneCore/build/intermediates/res/merged/release/anim/design_fab_out.xml",
-        "source": "/Users/mengxiangcheng/Documents/project/android/project/fun/fun/PhoneCore/build/intermediates/exploded-aar/com.android.support/design/23.3.0/res/anim/design_fab_out.xml"
-    },
-    {
         "merged": "/Users/mengxiangcheng/Documents/project/android/project/fun/fun/PhoneCore/build/intermediates/res/merged/release/anim/cycle_7.xml",
         "source": "/Users/mengxiangcheng/Documents/project/android/project/fun/fun/PhoneCore/res/anim/cycle_7.xml"
+    },
+    {
+        "merged": "/Users/mengxiangcheng/Documents/project/android/project/fun/fun/PhoneCore/build/intermediates/res/merged/release/anim/design_fab_out.xml",
+        "source": "/Users/mengxiangcheng/Documents/project/android/project/fun/fun/PhoneCore/build/intermediates/exploded-aar/com.android.support/design/23.3.0/res/anim/design_fab_out.xml"
     },
     {
         "merged": "/Users/mengxiangcheng/Documents/project/android/project/fun/fun/PhoneCore/build/intermediates/res/merged/release/anim/xuanz.xml",

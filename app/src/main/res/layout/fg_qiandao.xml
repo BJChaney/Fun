@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/padding">
+
+        <EditText
+            android:id="@+id/tv_time"
+            style="@style/game_qiandao_et"
+            android:drawableLeft="@mipmap/ic_game_time"
+            android:text="09-20 16:00 周五" />
+
+        <TextView
+            android:id="@+id/tv_time_tip"
+            style="@style/game_qiandao_et"
+            android:layout_height="wrap_content"
+            android:text="*赛前两小时报名截止"
+            android:textColor="@color/red" />
+
+        <View
+            android:id="@+id/cutline1"
+            style="@style/cutline.h"
+            android:layout_marginLeft="@dimen/margin_double"
+            android:layout_marginRight="@dimen/padding" />
+
+        <EditText
+            android:id="@+id/tv_address"
+            style="@style/game_qiandao_et"
+            android:drawableLeft="@mipmap/ic_game_time"
+            android:text="北京工人体育场" />
+
+        <View
+            android:id="@+id/cutline2"
+            style="@style/cutline.h"
+            android:layout_marginLeft="@dimen/margin_double"
+            android:layout_marginRight="@dimen/padding" />
+
+        <EditText
+            android:id="@+id/et_color"
+            style="@style/game_qiandao_et"
+            android:layout_width="match_parent"
+            android:drawableLeft="@mipmap/ic_game_time"
+            android:text="北京工人体育场" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height"
+        android:layout_marginTop="@dimen/padding"
+        android:background="@color/white"
+        android:padding="@dimen/padding">
+
+        <TextView
+            style="@style/game_qiandao_tv"
+            android:text="报名"
+            android:textColor="@color/blue" />
+
+        <TextView
+            android:id="@+id/tv_baoming_num"
+            style="@style/game_qiandao_tv"
+            android:layout_alignParentRight="true"
+            android:text="1" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/rv_baoming"
+        layout="@layout/include_recyclerview_noanim" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height"
+        android:layout_marginTop="@dimen/padding"
+        android:background="@color/white"
+        android:padding="@dimen/padding">
+
+        <TextView
+            style="@style/game_qiandao_tv"
+            android:text="请假"
+            android:textColor="@color/red" />
+
+        <TextView
+            android:id="@+id/tv_qingjia_num"
+            style="@style/game_qiandao_tv"
+            android:layout_alignParentRight="true"
+            android:text="1" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/rv_qingjia"
+        layout="@layout/include_recyclerview_noanim" />
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height"
+        android:layout_marginLeft="@dimen/padding"
+        android:layout_marginRight="@dimen/padding"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="报  名"
+            android:onClick="baoMing"
+            style="@style/bg_yellow_text_black"
+            android:layout_height="match_parent" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="请  假"
+            android:onClick="qingJia"
+            style="@style/bg_yellow_text_black"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

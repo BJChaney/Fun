@@ -24,13 +24,8 @@ android {
 //            buildConfigField "String", "URL_SHARE_ACTIVITY","\"http://zhid58.com/activity/\""
 //            buildConfigField "String", "URL_SHARE_SCHOOL","\"http://zhid58.com/college/\""
 //            buildConfigField "String", "URL_SHARE_APP","\"http://a.app.qq.com/o/simple.jsp?pkgname=com.luoteng.folk\""
-            buildConfigField "String", "URL_BASE", "\"http://test.zhid58.com:8080/api\""
-            buildConfigField "String", "URL_SHARE", "\"http://wetest.zhid58.com\""
-            buildConfigField "String", "URL_SHARE_COUPON", "\"http://wetest.zhid58.com/coupon?pid=\""
-            buildConfigField "String", "URL_SHARE_DISCLOSE","\"http://wetest.zhid58.com/broke/\""
-            buildConfigField "String", "URL_SHARE_ARTICLE","\"http://wetest.zhid58.com/dynamic/\""
-            buildConfigField "String", "URL_SHARE_ACTIVITY","\"http://wetest.zhid58.com/activity/\""
-            buildConfigField "String", "URL_SHARE_SCHOOL","\"http://wetest.zhid58.com/college/\""
+            buildConfigField "String", "URL_BASE", "\"http://www.oradio.cc/funFootball\""
+            buildConfigField "String", "URL_SHARE", "\"http://www.oradio.cc/funFootball\""
             buildConfigField "String", "URL_SHARE_APP","\"http://a.app.qq.com/o/simple.jsp?pkgname=com.luoteng.folk\""
             //是否进行混淆
 //            versionNameSuffix "-debug"
@@ -42,13 +37,8 @@ android {
         release {
             // 不显示Log
             buildConfigField "boolean", "LOG_DEBUG", rootProject.ext.logDebug.toString()
-            buildConfigField "String", "URL_BASE", "\"http://zhid58.com:8080/api\""
-            buildConfigField "String", "URL_SHARE", "\"http://zhid58.com\""
-            buildConfigField "String", "URL_SHARE_COUPON", "\"http://zhid58.com/coupon?pid=\""
-            buildConfigField "String", "URL_SHARE_DISCLOSE","\"http://zhid58.com/broke/\""
-            buildConfigField "String", "URL_SHARE_ARTICLE","\"http://zhid58.com/dynamic/\""
-            buildConfigField "String", "URL_SHARE_ACTIVITY","\"http://zhid58.com/activity/\""
-            buildConfigField "String", "URL_SHARE_SCHOOL","\"http://zhid58.com/college/\""
+            buildConfigField "String", "URL_BASE", "\"http://www.oradio.cc/funFootball\""
+            buildConfigField "String", "URL_SHARE", "\"http://www.oradio.cc/funFootball\""
             buildConfigField "String", "URL_SHARE_APP","\"http://a.app.qq.com/o/simple.jsp?pkgname=com.luoteng.folk\""
             //是否进行混淆
             minifyEnabled false

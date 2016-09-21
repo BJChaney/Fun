@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_back_grey" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_more_gray" />
+    </RelativeLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/view_height">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/barlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/layout_zhidian"
+            android:background="@color/background"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="@mipmap/bg_game"
+                android:padding="@dimen/padding"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    style="@style/sevenDarkGray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv_score"
+                    android:layout_centerHorizontal="true"
+                    android:text="2016 09-10" />
+
+                <TextView
+                    android:id="@+id/tv_score"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/padding"
+                    android:layout_marginBottom="@dimen/padding"
+                    android:layout_marginLeft="@dimen/margin_double"
+                    android:layout_marginRight="@dimen/margin_double"
+                    android:layout_marginTop="@dimen/padding"
+                    android:gravity="center"
+                    android:text="0:0"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/elevenSize" />
+
+                <ImageView
+                    android:id="@+id/imv_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_score"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/ic_video" />
+
+                <include
+                    android:id="@+id/sdv_left"
+                    layout="@layout/include_simpledraweeview_fitcenter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@id/tv_score"></include>
+
+                <include
+                    android:id="@+id/sdv_right"
+                    layout="@layout/include_simpledraweeview_fitcenter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@id/tv_score"></include>
+
+                <TextView
+                    android:id="@+id/tv_left"
+                    style="@style/sevenBlack"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sdv_left"
+                    android:layout_toLeftOf="@id/tv_score"
+                    android:gravity="center"
+                    android:text="国家电网1" />
+
+                <TextView
+                    android:id="@+id/tv_right"
+                    style="@style/sevenBlack"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sdv_right"
+                    android:layout_toRightOf="@id/tv_score"
+                    android:gravity="center"
+                    android:text="国家电网2" />
+            </RelativeLayout>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tl_game"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                app:tabGravity="center"
+                app:tabIndicatorColor="@color/basecolor"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="@color/basecolor"
+                app:tabTextColor="@color/darkgray" />
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>
