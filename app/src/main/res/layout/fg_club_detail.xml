@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <include
+        android:id="@+id/sdv_top"
+        layout="@layout/include_simpledraweeview_fitcenter"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="@dimen/view_height"
+        android:clickable="true"
+        android:onClick="back"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_back" />
+
+    <ImageView
+        android:id="@+id/imv_more"
+        android:layout_width="60dp"
+        android:layout_height="@dimen/view_height"
+        android:layout_alignParentRight="true"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_more_v" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="@dimen/view_height"
+        android:layout_toLeftOf="@id/imv_more"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_add" />
+
+    <com.android.core.view.RoundImageView2
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/sdv_top"
+        android:layout_marginLeft="@dimen/margin_double"
+        android:layout_marginTop="-49dp"
+        android:background="@color/white" />
+
+    <include
+        android:id="@+id/sdv_teamicon"
+        layout="@layout/include_simpledraweeview_fitcenter"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_below="@+id/sdv_top"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="-48dp" />
+
+    <TextView
+        android:id="@+id/tv_teamname"
+        style="@style/eightBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sdv_top"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_toRightOf="@id/sdv_teamicon"
+        android:text="国家电网" />
+
+    <TextView
+        android:id="@+id/tv_team_other"
+        style="@style/sixDarkGray"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_below="@id/tv_teamname"
+        android:layout_toRightOf="@id/sdv_teamicon"
+        android:gravity="center_vertical"
+        android:text="3周年 北京" />
+
+    <Button
+        android:id="@+id/btn_addteam"
+        android:layout_width="80dp"
+        android:layout_height="@dimen/view_height"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/sdv_top"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:background="@drawable/bg_basecolor_leftcircle"
+        android:onClick="addTeam" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tl_clubdetail"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/btn_addteam"
+        android:background="@color/gray" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_clubdetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tl_club" />
+</RelativeLayout>

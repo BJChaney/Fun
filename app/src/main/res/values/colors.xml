@@ -5,6 +5,7 @@
     <color name="colorAccent">@color/basecolor</color>
 
     <color name="background">#F5F5F5</color>
+    <color name="blackhaze">#F7F7F7</color>
     <color name="basecolor">#FFF49B0F</color>
     <color name="basecolor_press">#FF0196DD</color>
     <color name="basecolor_press_70">#700196DD</color>

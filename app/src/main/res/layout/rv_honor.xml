@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_teamname"
+        style="@style/eightBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding" />
+
+    <include
+        android:id="@+id/sdv_pic"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="@dimen/padding"
+        layout="@layout/include_simpledraweeview" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        style="@style/sixTransBlack"
+        android:layout_marginTop="@dimen/padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        style="@style/cutline.h"
+        android:layout_marginTop="@dimen/padding" />
+</LinearLayout>
+<!-- 俱乐部详情资料中的荣誉记录 -->

@@ -263,6 +263,12 @@
     </style>
 
 
+    <!-- 俱乐部 -->
+    <style name="club_main_tv_label" parent="@style/sixTransBlack">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/padding</item>
+    </style>
 
 
 </resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/padding"
+    android:paddingTop="@dimen/padding">
+
+    <TextView
+        android:id="@+id/tv_yijiaru"
+        style="@style/club_main_tv_label"
+        android:text="已加入" />
+    <LinearLayout
+        android:id="@+id/ll_yijiaru"
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:background="@color/blackhaze"
+        android:padding="@dimen/padding">
+        <include
+            layout="@layout/rv_club"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/padding_half"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_yiguanzhu"
+        style="@style/club_main_tv_label"
+        android:text="已关注" />
+    <LinearLayout
+        android:id="@+id/ll_yiguanzhu"
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:orientation="horizontal"
+        android:background="@color/blackhaze"
+        android:padding="@dimen/padding">
+
+    </LinearLayout>
+</LinearLayout>

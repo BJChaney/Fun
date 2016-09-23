@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/sevenTransBlack"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:text="基本资料" />
+
+    <View style="@style/cutline.h" />
+
+    <TextView
+        android:id="@+id/tv_teamname"
+        style="@style/eightBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_half" />
+
+    <TextView
+        android:id="@+id/tv_otherinfo"
+        style="@style/sixTransBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingMultiplier="1.5" />
+
+    <View
+        style="@style/cutline.h"
+        android:layout_marginBottom="@dimen/padding_half"
+        android:layout_marginTop="@dimen/padding_half" />
+
+    <TextView
+        style="@style/sevenTransBlack"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:text="荣誉记录" />
+
+    <View style="@style/cutline.h" />
+
+    <include
+        android:id="@+id/rv_honor"
+        layout="@layout/include_recyclerview_noanim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
