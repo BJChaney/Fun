@@ -80,9 +80,11 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
         myFragment = MyFragment.getInstance();
 
         fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction().add(R.id.main_tab_fragment,gameFragment).commit();
-        fragmentManager.beginTransaction().add(R.id.main_tab_fragment,clubFragment).commit();
-        fragmentManager.beginTransaction().add(R.id.main_tab_fragment,myFragment).commit();
+        fragmentManager.beginTransaction()
+                .add(R.id.main_tab_fragment,gameFragment)
+                .add(R.id.main_tab_fragment,clubFragment)
+                .add(R.id.main_tab_fragment,myFragment)
+                .commit();
     }
 
     @Override
@@ -93,23 +95,26 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
     private void layoutChangeByCheckId(int id) {
         switch (id){
             case R.id.rb_game:
-                fragmentManager.beginTransaction().show(gameFragment).commit();
-                fragmentManager.beginTransaction().hide(clubFragment).commit();
-                fragmentManager.beginTransaction().hide(myFragment).commit();
+                fragmentManager.beginTransaction().show(gameFragment)
+                        .hide(clubFragment)
+                        .hide(myFragment)
+                        .commit();
                 tv_title.setText("第一届 | 北京");
                 layout_main.setVisibility(View.VISIBLE);
                 break;
             case R.id.rb_club:
-                fragmentManager.beginTransaction().hide(gameFragment).commit();
-                fragmentManager.beginTransaction().show(clubFragment).commit();
-                fragmentManager.beginTransaction().hide(myFragment).commit();
-                tv_title.setText("Fun俱乐部");
+                fragmentManager.beginTransaction().hide(gameFragment)
+                        .show(clubFragment)
+                        .hide(myFragment)
+                        .commit();
+                tv_title.setText(getResources().getString(R.string.main_club));
                 layout_main.setVisibility(View.VISIBLE);
                 break;
             case R.id.rb_my:
-                fragmentManager.beginTransaction().hide(gameFragment).commit();
-                fragmentManager.beginTransaction().hide(clubFragment).commit();
-                fragmentManager.beginTransaction().show(myFragment).commit();
+                fragmentManager.beginTransaction().hide(gameFragment)
+                        .hide(clubFragment)
+                        .show(myFragment)
+                        .commit();
                 layout_main.setVisibility(View.GONE);
                 break;
         }
