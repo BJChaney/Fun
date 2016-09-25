@@ -10,7 +10,7 @@
     android:orientation="horizontal">
 
     <include
-        layout="@layout/include_simpledraweeview_centerInside"
+        layout="@layout/include_simpledraweeview_centerinside"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1" />

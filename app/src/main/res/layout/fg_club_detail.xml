@@ -92,5 +92,5 @@
         android:id="@+id/vp_clubdetail"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/tl_club" />
+        android:layout_below="@id/tl_clubdetail" />
 </RelativeLayout>

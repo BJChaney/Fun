@@ -53,6 +53,8 @@
 
 
     <color name="gray">#ccc</color>
+    <color name="gray_normal">#666666</color>
+    <color name="grayblack">#999999</color>
     <color name="lightgray">#eee</color>
     <color name="darkgray">#A9A9A9</color>
     <color name="black">#000</color>
