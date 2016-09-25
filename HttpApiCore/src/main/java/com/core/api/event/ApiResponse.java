@@ -8,7 +8,7 @@ public class ApiResponse<T> {
 
     private String msg;
 
-    private T _embedded;
+    private T param;
 
     private int statusCode;
 
@@ -22,13 +22,14 @@ public class ApiResponse<T> {
     }
 
 
-    public T get_embedded() {
-        return _embedded;
+    public T getParam() {
+        return param;
     }
 
-    public void set_embedded(T _embedded) {
-        this._embedded = _embedded;
+    public void setParam(T param) {
+        this.param = param;
     }
+
 
     public String getMsg() {
         return msg;
