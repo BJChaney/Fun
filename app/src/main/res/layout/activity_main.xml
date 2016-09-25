@@ -14,6 +14,7 @@
             android:id="@+id/layout_tab"
             android:layout_width="match_parent"
             android:layout_height="@dimen/tab_height"
+            android:background="@color/darkgray"
             android:layout_alignParentBottom="true">
 
             <RadioGroup
@@ -29,7 +30,7 @@
                     android:layout_weight="1"
                     android:drawablePadding="@dimen/padding_half"
                     android:drawableTop="@drawable/rb_game_selector"
-                    android:text="" />
+                    android:text="@string/main_game" />
 
                 <RadioButton
                     android:id="@+id/rb_club"
@@ -37,7 +38,7 @@
                     android:layout_weight="1"
                     android:drawablePadding="@dimen/padding_half"
                     android:drawableTop="@drawable/rb_club_selector"
-                    android:text="" />
+                    android:text="@string/main_club" />
 
                 <RadioButton
                     android:id="@+id/rb_my"
@@ -45,24 +46,21 @@
                     android:layout_weight="1"
                     android:drawablePadding="@dimen/padding_half"
                     android:drawableTop="@drawable/rb_my_selector"
-                    android:text="" />
+                    android:text="@string/main_my" />
             </RadioGroup>
 
         </FrameLayout>
 
-        <!--<View-->
-        <!--android:id="@+id/cutline"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="1px"-->
-        <!--android:layout_above="@id/rg_main"-->
-        <!--android:background="@color/gray"-->
-        <!--android:visibility="gone" />-->
+        <View
+            android:id="@+id/cutline"
+            android:layout_above="@id/layout_tab"
+            style="@style/cutline.h"/>
 
         <FrameLayout
             android:id="@+id/main_tab_fragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_above="@id/layout_tab" />
+            android:layout_above="@id/cutline" />
 
     </RelativeLayout>
 
