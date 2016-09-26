@@ -13,10 +13,30 @@ import com.beijing.fun.R;
  */
 public class MyFragment extends BaseFragment {
 
+
+
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fg_my,null);
+        View view = inflater.inflate(R.layout.fg_my,null);
+        findViews(view);
+        return view;
+    }
+
+    private void findViews(View view) {
+
+
+        view.findViewById(R.id.iv_avator).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                goUserInfoActivity();
+            }
+        });
+    }
+
+    private void goUserInfoActivity() {
+
     }
 
 

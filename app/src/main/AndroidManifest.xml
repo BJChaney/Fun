@@ -25,6 +25,25 @@
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
 
+        <activity
+            android:name=".activity.AboutActivity_"
+            android:configChanges="fontScale"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.FeedbackActivity_"
+            android:configChanges="fontScale"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.UpdateNameActivity_"
+            android:configChanges="fontScale"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+
         <receiver android:name=".receiver.RetryLoginReceiver">
             <intent-filter>
                 <action android:name="android.luoteng.folk.intent.action.RETRYLOGIN_RECEIVER_ACTION" />

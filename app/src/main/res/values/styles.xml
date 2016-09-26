@@ -221,6 +221,11 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">1px</item>
     </style>
+    <style name="cutline.h.padding" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/padding</item>
+        <item name="android:background">@color/background</item>
+    </style>
 
     <!-- 组件公共 -->
     <style name="bg_yellow_text_black" parent="sevenTransBlack">

@@ -10,7 +10,7 @@
     <string name="mobile">手机</string>
     <string name="revise_password">修改密码</string>
     <string name="about_us">关于我们</string>
-    <string name="logout">注销登录</string>
+    <string name="logout">退出登录</string>
     <string name="quit">退出</string>
     <string name="captcha">验证码</string>
     <string name="complete">完成</string>
@@ -23,9 +23,11 @@
     <string name="loading">加载中</string>
     <string name="nonet"></string>
     <string name="netlong"></string>
+    <string name="agree">同意</string>
+    <string name="notagree">拒绝</string>
     <string name="digits">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ,._!?;:@</string>
 
-    <!-- -->
+    <!--首页-->
     <string name="main_game">Fun赛事</string>
     <string name="main_club">Fun俱乐部</string>
     <string name="main_my">我</string>
@@ -34,4 +36,39 @@
     <!-- 赛事 -->
     <string name="score_1_right">%1$s %2$d:%3$d %4$s</string>
     <string name="score_1_right_vs">%1$s VS %4$s</string>
+    
+    <!--我-->
+    <string name="my_tip_avator">头像</string>
+    <string name="my_tip_nickname">昵称</string>
+    <string name="my_tip_sex">性别</string>
+    <string name="my_tip_address">地区</string>
+    <string name="my_tip_birthday">生日</string>
+    <string name="my_tip_height">身高</string>
+    <string name="my_tip_weight">体重</string>
+    <string name="my_lab_userinfo">个人资料</string>
+    <string name="my_lab_appinfo">Fun球迷 %1$s</string>
+    <string name="my_lab_weibo">官方微博</string>
+    <string name="my_lab_about">关于我们</string>
+    <string name="my_hint_contact">联系方式</string>
+    <string name="my_hint_content">内容</string>
+    <string name="my_lab_sex_man">男</string>
+    <string name="my_lab_sex_woman">女</string>
+    <string name="my_btn_msg">消息</string>
+    <string name="my_btn_notice">公告</string>
+    <string name="my_tip_ps">附加信息</string>
+    <string name="my_lab_version">版本信息</string>
+    <string name="my_lab_feedback">意见反馈</string>
+    <string name="my_lab_recommend">推荐好友</string>
+    <string name="my_lab_apply_exit">申请退队</string>
+    <string name="my_tip_joined_club">已加入俱乐部</string>
+    <string name="my_age">年龄\n%1$s</string>
+    <string name="my_height">身高\n%1$s</string>
+    <string name="my_weight">体重\n%1$s</string>
+    <string name="my_lab_recommend_wechat">推荐给微信好友</string>
+    <string name="my_tip_height_cm">cm</string>
+    <string name="my_tip_weight_kg">kg</string>
+    <string name="my_tip_apply_exit">您确定要退出团队吗?</string>
+    <string name="my_lab_copyright">\@Copyright</string>
+    <string name="my_tip_change_nickname">好昵称可以让你队友知道你是谁.</string>
+    <string name="my_lab_change_nickname">更改昵称</string>
 </resources>

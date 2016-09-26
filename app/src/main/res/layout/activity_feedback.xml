@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <include layout="@layout/include_back_commit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height"/>
+    <EditText
+        android:id="@+id/et_contact"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/min_view_height"
+        android:paddingLeft="@dimen/margin"
+        android:paddingRight="@dimen/margin"
+        android:hint="@string/my_hint_contact"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        />
+    <View
+        style="@style/cutline.h"/>
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/margin"
+        android:paddingTop="@dimen/margin"
+        android:paddingRight="@dimen/margin"
+        android:hint="@string/my_hint_content"
+        android:gravity="top"
+        android:background="@color/white"
+        />
+</LinearLayout>

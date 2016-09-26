@@ -68,7 +68,6 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
         img_back.setVisibility(View.GONE);
 
         tv_commit.setVisibility(View.GONE);
-        layout_main.setBackgroundColor(getResources().getColor(R.color.basecolor));
         initFragments();
         rg_main.setOnCheckedChangeListener(this);
         rb_game.setChecked(true);
